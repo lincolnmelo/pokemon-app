@@ -1,0 +1,10 @@
+.img {
+  float: right;
+  max-width: 150px;
+  height:150px;
+  padding: 10px;
+}
+
+.card {
+  padding: 10px;
+}
