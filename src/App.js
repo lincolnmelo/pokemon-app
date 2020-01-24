@@ -1,9 +1,9 @@
-import React from 'react';
-import './App.css';
-import  Views  from './views'
+import React from 'react'
+import './App.css'
+import Homepage from './views/home/HomePage'
 
 function App() {
-  return <Views />
+  return <Homepage />
 }
 
-export default App;
+export default App

@@ -1,23 +1,18 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import { CardsContent } from './Card'
+import React from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import Grid from '@material-ui/core/Grid'
+import { CardsContent } from './card/Card'
 
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    padding: 10
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
     color: theme.palette.text.secondary,
-  },
-}));
+  }
+}))
 
 export default function Cards() {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <div className={classes.root}>
@@ -29,5 +24,5 @@ export default function Cards() {
         <CardsContent />
       </Grid>
     </div>
-  );
+  )
 }

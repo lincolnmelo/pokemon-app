@@ -1,32 +1,34 @@
 import React from 'react'
-import { useQuery } from '@apollo/react-hooks';
-import gql from 'graphql-tag';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import InfoSharpIcon from '@material-ui/icons/InfoSharp';
+import { useQuery } from '@apollo/react-hooks'
+import gql from 'graphql-tag'
+import { makeStyles } from '@material-ui/core/styles'
+import Card from '@material-ui/core/Card'
+import CardActionArea from '@material-ui/core/CardActionArea'
+import CardActions from '@material-ui/core/CardActions'
+import CardContent from '@material-ui/core/CardContent'
+import Button from '@material-ui/core/Button'
+import Typography from '@material-ui/core/Typography'
+import InfoSharpIcon from '@material-ui/icons/InfoSharp'
 import './Card.css'
 
 
-import LinearBuffer from './LinearBuffer'
-import Grid from '@material-ui/core/Grid';
+import LinearBuffer from '../../linearBuffer/LinearBuffer'
+import Grid from '@material-ui/core/Grid'
 
 const useStyles = makeStyles({
   grid: {
-    padding: 5
+    paddingRight: 4,
+    paddingBottom: 10
   },
   card: {
     maxWidth: 345,
+    minWidth: 170,
   }
-});
+})
 
 const GET_GREETING = gql`
   {
-    pokemons(first: 10){
+    pokemons(first: 20){
       id
       name
       image
@@ -47,17 +49,17 @@ const GET_GREETING = gql`
       }
     }
   }
-`;
+`
 
 export function CardsContent() {
   const classes = useStyles()
-  const { loading, error, data } = useQuery(GET_GREETING);
+  const { loading, error, data } = useQuery(GET_GREETING)
   if (loading) return (<LinearBuffer />)
-  if (error) return <p>Error ...</p>;
+  if (error) return <p>Error ...</p>
 
   return data.pokemons.map(elem => {
     return (
-      <Grid className={classes.grid}>
+      <Grid className={classes.grid} key={elem.name}>
         <Card key={elem.name} className={classes.card}>
           <CardActionArea>
             <img className={'img'} src={elem.image} alt=""/>

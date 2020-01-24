@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import ApolloClient from 'apollo-boost';
-import { ApolloProvider } from '@apollo/react-components';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import App from './App'
+import * as serviceWorker from './serviceWorker'
+import ApolloClient from 'apollo-boost'
+import { ApolloProvider } from '@apollo/react-components'
 
 const client = new ApolloClient({
-  uri: 'https://graphql-pokemon.now.sh/',
+  uri: 'https://graphql-pokemon.now.sh/'
 });
 
 const WrappedApp = (
@@ -16,6 +16,6 @@ const WrappedApp = (
   </ApolloProvider>
 );
 
-ReactDOM.render(WrappedApp, document.getElementById('root'));
+ReactDOM.render(WrappedApp, document.getElementById('root'))
 
 serviceWorker.unregister();
