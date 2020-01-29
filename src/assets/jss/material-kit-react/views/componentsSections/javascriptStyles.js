@@ -1,8 +1,8 @@
-import { container, title } from "assets/jss/material-kit-react.js";
+import { container, title } from "../../../material-kit-react.js";
 
-import modalStyle from "assets/jss/material-kit-react/modalStyle.js";
-import tooltipsStyle from "assets/jss/material-kit-react/tooltipsStyle.js";
-import popoverStyles from "assets/jss/material-kit-react/popoverStyles.js";
+import modalStyle from "../../../material-kit-react/modalStyle.js";
+import tooltipsStyle from "../../../material-kit-react/tooltipsStyle.js";
+import popoverStyles from "../../../material-kit-react/popoverStyles.js";
 
 const javascriptStyles = {
   section: {
@@ -18,7 +18,8 @@ const javascriptStyles = {
   icon: {
     width: "17px",
     height: "17px",
-    marginRight: "4px"
+    marginRight: "4px",
+    color: '#A00000'
   },
   ...modalStyle,
   label: {

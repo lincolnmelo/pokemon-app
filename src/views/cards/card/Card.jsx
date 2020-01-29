@@ -6,11 +6,9 @@ import Card from '@material-ui/core/Card'
 import CardActionArea from '@material-ui/core/CardActionArea'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
-import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
-import InfoSharpIcon from '@material-ui/icons/InfoSharp'
+import CustonModal from '../../../components/CustomModal/CustomModal'
 import './Card.css'
-
 
 import LinearBuffer from '../../linearBuffer/LinearBuffer'
 import Grid from '@material-ui/core/Grid'
@@ -73,10 +71,7 @@ export function CardsContent() {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" color="primary">
-              <InfoSharpIcon edge="start" className={classes.menuButton} color="primary" aria-label="Mais">
-              </InfoSharpIcon>
-            </Button>
+            <CustonModal data={elem}/>
           </CardActions>
         </Card>
       </Grid>

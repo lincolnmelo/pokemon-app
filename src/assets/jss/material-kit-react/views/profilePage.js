@@ -13,6 +13,14 @@ const profilePageStyle = {
       transform: "translate3d(0, -50%, 0)"
     }
   },
+  search: {
+    textAlign: "right",
+    margin: "0 auto",
+    transform: "translate3d(0, -150%, 0)"
+  },
+  searchIcon: {
+    color: "#A00000"
+  },
   description: {
     margin: "1.071rem auto 0",
     maxWidth: "600px",
@@ -24,7 +32,7 @@ const profilePageStyle = {
   },
   ...imagesStyle,
   main: {
-    background: "#FFFFFF",
+    background: "#FBFBFB",
     position: "relative",
     zIndex: "3"
   },

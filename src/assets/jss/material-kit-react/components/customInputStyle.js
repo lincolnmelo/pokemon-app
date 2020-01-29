@@ -3,7 +3,7 @@ import {
   dangerColor,
   successColor,
   defaultFont
-} from "assets/jss/material-kit-react.js";
+} from "../../material-kit-react.js";
 
 const customInputStyle = {
   disabled: {
@@ -35,7 +35,7 @@ const customInputStyle = {
       borderColor: "#FFFFFF"
     },
     "&:after": {
-      borderColor: "#FFFFFF"
+      borderColor: "#A00000"
     }
   },
   labelRoot: {
@@ -61,7 +61,7 @@ const customInputStyle = {
     paddingTop: "27px",
     position: "relative",
     "& svg,& .fab,& .far,& .fal,& .fas,& .material-icons": {
-      color: "#495057"
+      color: "#A00000"
     }
   },
   input: {
@@ -80,7 +80,7 @@ const customInputStyle = {
   },
   whiteInput: {
     "&,&::placeholder": {
-      color: "#FFFFFF",
+      color: "#495057",
       opacity: "1"
     }
   }

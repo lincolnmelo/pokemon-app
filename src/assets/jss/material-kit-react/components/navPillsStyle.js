@@ -5,7 +5,7 @@ import {
   successColor,
   warningColor,
   dangerColor
-} from "assets/jss/material-kit-react.js";
+} from "../../material-kit-react.js";
 
 const navPillsStyle = theme => ({
   root: {
@@ -37,7 +37,7 @@ const navPillsStyle = theme => ({
     display: "block"
   },
   pills: {
-    float: "left",
+    float: "flex",
     position: "relative",
     display: "block",
     borderRadius: "30px",
