@@ -1,0 +1,1 @@
+{"version":3,"sources":["Card.css"],"names":[],"mappings":"AAAA,KACE,WAAY,CACZ,eAAgB,CAChB,YAEF,CAEA,WAHE,YAKF","file":"4.5cc178e9.chunk.css","sourcesContent":[".img {\n  float: right;\n  max-width: 150px;\n  height:150px;\n  padding: 10px;\n}\n\n.card {\n  padding: 10px;\n}"]}

@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/pokemon-app/static/css/main.2863882b.chunk.css",
-    "main.js": "/pokemon-app/static/js/main.f93af815.chunk.js",
-    "main.js.map": "/pokemon-app/static/js/main.f93af815.chunk.js.map",
-    "runtime-main.js": "/pokemon-app/static/js/runtime-main.f8d5df80.js",
-    "runtime-main.js.map": "/pokemon-app/static/js/runtime-main.f8d5df80.js.map",
-    "static/js/2.cce11150.chunk.js": "/pokemon-app/static/js/2.cce11150.chunk.js",
-    "static/js/2.cce11150.chunk.js.map": "/pokemon-app/static/js/2.cce11150.chunk.js.map",
+    "main.css": "/pokemon-app/static/css/main.b100e6da.chunk.css",
+    "main.js": "/pokemon-app/static/js/main.8472a74f.chunk.js",
+    "main.js.map": "/pokemon-app/static/js/main.8472a74f.chunk.js.map",
+    "runtime-main.js": "/pokemon-app/static/js/runtime-main.e0570d7b.js",
+    "runtime-main.js.map": "/pokemon-app/static/js/runtime-main.e0570d7b.js.map",
+    "static/js/2.93fde1c5.chunk.js": "/pokemon-app/static/js/2.93fde1c5.chunk.js",
+    "static/js/2.93fde1c5.chunk.js.map": "/pokemon-app/static/js/2.93fde1c5.chunk.js.map",
+    "static/js/3.92874f4b.chunk.js": "/pokemon-app/static/js/3.92874f4b.chunk.js",
+    "static/js/3.92874f4b.chunk.js.map": "/pokemon-app/static/js/3.92874f4b.chunk.js.map",
+    "static/css/4.5cc178e9.chunk.css": "/pokemon-app/static/css/4.5cc178e9.chunk.css",
+    "static/js/4.f0f82329.chunk.js": "/pokemon-app/static/js/4.f0f82329.chunk.js",
+    "static/js/4.f0f82329.chunk.js.map": "/pokemon-app/static/js/4.f0f82329.chunk.js.map",
     "index.html": "/pokemon-app/index.html",
-    "precache-manifest.6dd2302fb53e7cf944c6e72b23db3bc6.js": "/pokemon-app/precache-manifest.6dd2302fb53e7cf944c6e72b23db3bc6.js",
+    "precache-manifest.37ad7697656238a76962cd0c191382c4.js": "/pokemon-app/precache-manifest.37ad7697656238a76962cd0c191382c4.js",
     "service-worker.js": "/pokemon-app/service-worker.js",
-    "static/css/main.2863882b.chunk.css.map": "/pokemon-app/static/css/main.2863882b.chunk.css.map",
+    "static/css/4.5cc178e9.chunk.css.map": "/pokemon-app/static/css/4.5cc178e9.chunk.css.map",
+    "static/css/main.b100e6da.chunk.css.map": "/pokemon-app/static/css/main.b100e6da.chunk.css.map",
     "static/media/ParallaxPage.png": "/pokemon-app/static/media/ParallaxPage.77262734.png",
     "static/media/pokedex-app.png": "/pokemon-app/static/media/pokedex-app.cc17733e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f8d5df80.js",
-    "static/js/2.cce11150.chunk.js",
-    "static/css/main.2863882b.chunk.css",
-    "static/js/main.f93af815.chunk.js"
+    "static/js/runtime-main.e0570d7b.js",
+    "static/js/2.93fde1c5.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.8472a74f.chunk.js"
   ]
 }
