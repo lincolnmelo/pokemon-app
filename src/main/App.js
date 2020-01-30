@@ -1,9 +1,9 @@
 import React from 'react'
 import './App.css'
-import Homepage from './views/home/HomePage'
+import Routes from '../main/Routes'
 
 function App() {
-  return <Homepage />
+  return <Routes />
 }
 
 export default App

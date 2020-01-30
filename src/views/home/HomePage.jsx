@@ -14,7 +14,7 @@ import Cards from '../cards/Cards'
 
 const useStyles = makeStyles(styles)
 
-export default function ProfilePage() {
+export default function HomePage() {
   const classes = useStyles()
   const imageClasses = classNames(
     classes.imgRaised,

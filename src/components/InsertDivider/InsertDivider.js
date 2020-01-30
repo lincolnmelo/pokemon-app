@@ -37,7 +37,7 @@ export default function InsetDividers(props) {
 
   return (
     <div key="InsetDividers">
-      <img key="InsetDividers-img" className={classes.img} alt={data.name} src={data.image} />
+      <img className={classes.img} alt={data.name} src={data.image} />
 
       <List className={classes.root}>
         <ListItem>
@@ -48,9 +48,9 @@ export default function InsetDividers(props) {
             />
           </ListItemAvatar>
           <ListItemText primary="Tipo:" />
-          <div key={"div-types"} className={classes.itemWidth}>
-            <dl key={'dl-types-itens'}>
-              {data.types ? data.types.map(elem => <dd className={classes.textDD}> {elem}</dd>) : ' '}
+          <div className={classes.itemWidth}>
+            <dl>
+              {data.types ? data.types.map(elem => <dd key={elem} className={classes.textDD}> {elem}</dd>) : ' '}
             </dl>
           </div>
         </ListItem>
@@ -66,9 +66,9 @@ export default function InsetDividers(props) {
                 />
               </ListItemAvatar>
               <ListItemText primary="Evoluções:" />
-              <div key={'div-evolutions'} className={classes.itemWidth}>
-                <dl key={'dl-evolutions-itens'}>
-                  {data.evolutions.map(elem => <dd className={classes.textDD}>{elem.name}</dd>)}
+              <div className={classes.itemWidth}>
+                <dl>
+                  {data.evolutions.map(elem => <dd key={elem.name} className={classes.textDD}>{elem.name}</dd>)}
                 </dl>
               </div>
             </ListItem>
@@ -85,18 +85,18 @@ export default function InsetDividers(props) {
           </ListItemAvatar>
           <ListItemText primary="Ataques:" />
 
-          <div key="div-attacks" className={classes.itemWidth}>
+          <div className={classes.itemWidth}>
             {data.attacks.fast ? (
-              <dl key={"dl-attacks-fast"} className={classes.attacksTypes}>
+              <dl className={classes.attacksTypes}>
                 <dt>Rápidos:</dt>
-                {data.attacks.fast ? data.attacks.fast.map(elem => <dd className={classes.textDD}>{elem.name}</dd>) : ' '}
+                {data.attacks.fast ? data.attacks.fast.map(elem => <dd key={elem.name} className={classes.textDD}>{elem.name}</dd>) : ' '}
               </dl>) : ''
             }
 
             {data.attacks.special ? (
-              <dl key={"dl-attacks-special"} className={classes.attacksTypes}>
+              <dl className={classes.attacksTypes}>
                 <dt>Especiais:</dt>
-                {data.attacks.special ? data.attacks.special.map(elem => <dd className={classes.textDD}>{elem.name}</dd>) : ' '}
+                {data.attacks.special ? data.attacks.special.map(elem => <dd key={elem.name} className={classes.textDD}>{elem.name}</dd>) : ' '}
               </dl>) : ''
             }
           </div>
