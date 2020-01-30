@@ -16,10 +16,6 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
   },
-  display: 'flex',
-  '& > *': {
-    margin: theme.spacing(1),
-  },
   textDD: {
     padding: '2px'
   },
@@ -52,8 +48,8 @@ export default function InsetDividers(props) {
             />
           </ListItemAvatar>
           <ListItemText primary="Tipo:" />
-          <div key={"id-tipo"} className={classes.itemWidth}>
-            <dl>
+          <div key={"div-types"} className={classes.itemWidth}>
+            <dl key={'dl-types-itens'}>
               {data.types ? data.types.map(elem => <dd className={classes.textDD}> {elem}</dd>) : ' '}
             </dl>
           </div>
@@ -70,8 +66,8 @@ export default function InsetDividers(props) {
                 />
               </ListItemAvatar>
               <ListItemText primary="Evoluções:" />
-              <div key={'id-evolucoes'} className={classes.itemWidth}>
-                <dl>
+              <div key={'div-evolutions'} className={classes.itemWidth}>
+                <dl key={'dl-evolutions-itens'}>
                   {data.evolutions.map(elem => <dd className={classes.textDD}>{elem.name}</dd>)}
                 </dl>
               </div>
@@ -89,16 +85,16 @@ export default function InsetDividers(props) {
           </ListItemAvatar>
           <ListItemText primary="Ataques:" />
 
-          <div key="ataques" className={classes.itemWidth}>
+          <div key="div-attacks" className={classes.itemWidth}>
             {data.attacks.fast ? (
-              <dl key={"ataque-rapido"} className={classes.attacksTypes}>
+              <dl key={"dl-attacks-fast"} className={classes.attacksTypes}>
                 <dt>Rápidos:</dt>
                 {data.attacks.fast ? data.attacks.fast.map(elem => <dd className={classes.textDD}>{elem.name}</dd>) : ' '}
               </dl>) : ''
             }
 
             {data.attacks.special ? (
-              <dl key={"ataque-especial"} className={classes.attacksTypes}>
+              <dl key={"dl-attacks-special"} className={classes.attacksTypes}>
                 <dt>Especiais:</dt>
                 {data.attacks.special ? data.attacks.special.map(elem => <dd className={classes.textDD}>{elem.name}</dd>) : ' '}
               </dl>) : ''
