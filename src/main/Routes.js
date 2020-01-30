@@ -8,8 +8,8 @@ export default props => (
   <Router>
     <Suspense fallback={<LoadPage />}>
       <Switch>
-        <Route exact path="/home" component={HomePage}/>
-        <Redirect from='*' to='/home' />
+        <Route exact path="/pokemon-app" component={HomePage}/>
+        <Redirect from='*' to='/pokemon-app' />
       </Switch>
     </Suspense>
   </Router>
